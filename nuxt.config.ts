@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-windicss"],
   runtimeConfig: {
-    apiKey: "",
+    apiKey: process.env.NUXT_TMDB_API_KEY,
     apiBaseUrl: "",
   },
 });
