@@ -1,4 +1,11 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "theme": {
+    "extend": {
+      "boxShadow": {
+        "xl": "0 35px 60px -15px rgba(0, 0, 0, 0.8)"
+      }
+    }
+  }
 }
