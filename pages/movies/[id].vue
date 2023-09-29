@@ -29,7 +29,6 @@ const config = useRuntimeConfig();
 const movieId = computed(() => route.params.id);
 
 const { data } = await useFetch<Movie>(`/api/movies/${movieId.value}`);
-console.log(data);
 
 const imgUrl = computed(() =>
   data.value?.poster_path
