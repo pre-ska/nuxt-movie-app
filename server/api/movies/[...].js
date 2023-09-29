@@ -4,7 +4,7 @@ export default defineEventHandler((event) => {
   const id = [...event.node.req.url.split("/")].pop();
   const config = useRuntimeConfig();
 
-  const URL = `${config.apiBaseUrl}/movie/${id}&api_key=${config.apiKey}`;
+  const URL = `${config.apiBaseUrl}/movie/${id}?&api_key=${config.apiKey}`;
 
   return $fetch(URL);
 });
